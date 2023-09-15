@@ -67,4 +67,49 @@ after that the life-cycle of servlet start, web container use ClassLoader to loa
 <br/>
 
 and so on.....
-  
+
+## What is Jersey and what it is important ?
+
+If you notice building a web applicaion using Servlet API will take a lot of time because for each url-pattern will make configuration on <b>web.xml</b> and if you need to build a Restful-API application it is difficult, so Jersey came on top of Servlet and make the configuration based on <b>Annotations</b> this make the build of application more easy, readable and make a development more fast.
+
+So if we need build the previous application they already mention it, That will be so easy :<br/>
+in <b>web.xml</b> there is one configuration for all class on the backage <br/>
+
+```
+<servlet>
+   <servlet-name>Jersey Web Application</servlet-name>
+   <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+   <init-param>
+         <param-name>jersey.config.server.provider.packages</param-name>
+         <param-value>com.dome.restdome</param-value>
+   </init-param>
+</servlet>
+<servlet-mapping>
+   <servlet-name>Jersey Web Application</servlet-name>
+   <url-pattern>/*</url-pattern>
+</servlet-mapping>
+
+```
+
+using this configuration allow us to use annotaions rather than xml configuration so <b>ServletContainer</b> will read the whole annotaions in <b>com.dome.restdome</b> backage and load the servlet classes when the client request any url pattern using wild-card <b>/*</b> .... <br/>
+
+
+```
+@Path("page")
+public class Page {
+
+   @GET
+   public String getPage(){
+         return "<b>This Page is Dynamic page</b>";
+   }
+}
+
+```
+
+so that's it ... ! <br/>
+
+Jersey is very beautiful framework make the development so easy .. <br/>
+
+I hope you get the general idea. <br/>
+
+<b>By : Hashem Ghanim</b>
