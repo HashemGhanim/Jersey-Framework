@@ -10,9 +10,9 @@ In ITG - Company I already study the basic way to make backend server based on j
   <br/>
   <img width="640" alt="Screenshot 2023-09-15 at 15 42 05" src="https://github.com/HashemGhanim/Jersey-Framework/assets/72875896/1cd8464d-834e-43ea-9f6f-e5135e420e5f">
   <br/>
-and this lead for a lot disadvantages like : 
-1- Clients increases, it takes more time for sending the response.
-2- For each request, it starts a process, and the web server is limited to start processes.
+and this lead for a lot disadvantages like : <br/>
+1- Clients increases, it takes more time for sending the response.<br/>
+2- For each request, it starts a process, and the web server is limited to start processes.<br/>
 
   Servlet came to made a solution for this issue, So when you use Servlet Interfaces the web server will contain an web container that receive an Http Request and make a multi Threads for all requests that already received in web container and this make the performance better, Robust, protability and Secure.
   <br/>
