@@ -5,7 +5,7 @@ In ITG - Company I already study the basic way to make backend server based on j
 # Servlet Interface :
    A technology is used to build a web application (server side and generates a dynamic web pages)
 
-## Servlet VS CGI (Common Gateway Interface) :
+#### Servlet VS CGI (Common Gateway Interface) :
   At The begining time when you need to build a web application you should use CGI to build it, But CGI it is not robust way to build a web application and lowest performance because in CGI when the HttpRequest reach the Server CGI will pass Http Request to external program to process the Request  
   <br/>
   <img width="640" alt="Screenshot 2023-09-15 at 15 42 05" src="https://github.com/HashemGhanim/Jersey-Framework/assets/72875896/1cd8464d-834e-43ea-9f6f-e5135e420e5f">
