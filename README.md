@@ -61,7 +61,7 @@ out.print("</body></html>");
 
 <br/>
 
-after that the life-cycle of servlet start, web container use ClassLoader to load servlet class and begin life-cycle :
+web container use ClassLoader to load servlet class and begin life-cycle :
 <br/>
 <img width="575" alt="Screenshot 2023-09-15 at 16 49 32" src="https://github.com/HashemGhanim/Jersey-Framework/assets/72875896/6a283d5e-d6a6-4491-8831-81c5df610ddf">
 <br/>
@@ -72,7 +72,7 @@ and so on.....
 
 If you notice building a web applicaion using Servlet API will take a lot of time because for each url-pattern will make configuration on <b>web.xml</b> and if you need to build a Restful-API application it is difficult, so Jersey came on top of Servlet and make the configuration based on <b>Annotations</b> this make the build of application more easy, readable and make a development more fast.
 
-So if we need build the previous application they already mention it, That will be so easy :<br/>
+So if we need build the previous application that already mention it, That will be so easy :<br/>
 in <b>web.xml</b> there is one configuration for all class on the backage <br/>
 
 ```
